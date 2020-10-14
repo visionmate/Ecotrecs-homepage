@@ -310,6 +310,11 @@ button {
                 flex-basis: 60%; }
     @media (min-width: 960px) {
       .products__item:nth-child(3) {
+        -webkit-flex-basis: 40%;
+            -ms-flex-preferred-size: 40%;
+                flex-basis: 40%; } }
+    @media (min-width: 1240px) {
+      .products__item:nth-child(3) {
         -webkit-flex-basis: 30%;
             -ms-flex-preferred-size: 30%;
                 flex-basis: 30%; } }
@@ -329,15 +334,20 @@ button {
       background-color: #deefd6; }
       @media (min-width: 960px) {
         .products__item:nth-child(4) {
-          -webkit-flex-basis: 70%;
-              -ms-flex-preferred-size: 70%;
-                  flex-basis: 70%;
+          -webkit-flex-basis: 60%;
+              -ms-flex-preferred-size: 60%;
+                  flex-basis: 60%;
           background: url("../../img/Lager 36.png"), #deefd6;
           -webkit-background-size: contain;
              -moz-background-size: contain;
                   background-size: contain;
           background-repeat: no-repeat;
           background-position: 100% 20rem; } }
+      @media (min-width: 1240px) {
+        .products__item:nth-child(4) {
+          -webkit-flex-basis: 70%;
+              -ms-flex-preferred-size: 70%;
+                  flex-basis: 70%; } }
       .products__item:nth-child(4) .products__item--container--title {
         color: #5CB134; }
       .products__item:nth-child(4) .products__item--container--slider {
