@@ -152,15 +152,22 @@ button {
         display: -ms-flexbox;
         display: flex; } }
   .menu--item {
-    padding: 0 3rem; }
+    padding: 0 1.5rem; }
+    @media (min-width: 1240px) {
+      .menu--item {
+        padding: 0 3rem; } }
     .menu--item:last-child {
       padding-right: 0; }
     .menu--item:first-child {
       padding-right: 0; }
     .menu--item a {
       color: #3D3D3D;
-      font-size: 2rem;
-      text-transform: uppercase; }
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500; }
+      @media (min-width: 1240px) {
+        .menu--item a {
+          display: 2rem; } }
 
 .header {
   height: 64.9rem;
@@ -522,58 +529,61 @@ button {
          -moz-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  @media (min-width: 960px) {
-    .about__items {
-      -webkit-flex-basis: 30%;
-          -ms-flex-preferred-size: 30%;
-              flex-basis: 30%; } }
-  .about__items--img {
-    width: 100%;
-    max-width: 37rem;
-    height: 36.7rem;
-    position: relative; }
-  .about__items--img.img-fir {
-    background-image: url("../../img/Lager 48.png"); }
-  .about__items--img.img-sec {
-    background-image: url("../../img/Kurvor 1.png"); }
-  .about__items--img.img-thr {
-    background-image: url("../../img/Nivåer 1.png"); }
-  .about__items--title {
-    background-color: #FFA200;
-    width: 26rem;
-    height: 15.8rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-         -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-    .about__items--title h6 {
-      font-size: 3rem;
-      line-height: 3.6rem;
-      color: #ffffff;
-      font-weight: 500; }
-  .about__items--description {
-    padding-top: 9.5rem;
-    font-size: 1.8rem;
-    line-height: 2.4rem; }
+  .about__items {
+    padding-bottom: 3rem; }
+    @media (min-width: 960px) {
+      .about__items {
+        -webkit-flex-basis: 30%;
+            -ms-flex-preferred-size: 30%;
+                flex-basis: 30%;
+        padding-bottom: 0; } }
+    .about__items--img {
+      width: 100%;
+      max-width: 37rem;
+      height: 36.7rem;
+      position: relative; }
+    .about__items--img.img-fir {
+      background-image: url("../../img/Lager 48.png"); }
+    .about__items--img.img-sec {
+      background-image: url("../../img/Kurvor 1.png"); }
+    .about__items--img.img-thr {
+      background-image: url("../../img/Nivåer 1.png"); }
+    .about__items--title {
+      background-color: #FFA200;
+      width: 26rem;
+      height: 15.8rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+           -o-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .about__items--title h6 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: #ffffff;
+        font-weight: 500; }
+    .about__items--description {
+      padding-top: 9.5rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem; }
 
 .video {
   margin-bottom: 10rem; }
