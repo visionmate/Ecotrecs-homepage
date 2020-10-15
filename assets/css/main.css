@@ -644,7 +644,10 @@ button {
          -moz-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 5rem 0 0 0; }
+      padding: 5rem 0 0 0;
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
       @media (min-width: 960px) {
         .clients__items--item {
           -webkit-flex-basis: 25%;
@@ -688,8 +691,6 @@ button {
     margin: 3rem 0; }
     .footer__company--contact a {
       display: block; }
-  .footer__company--social-media img {
-    opacity: 0.5; }
   .footer__company--copy-right {
     opacity: 0.2;
     margin-top: 2.4rem; }
@@ -713,4 +714,5 @@ button {
         width: 25rem; } }
     @media (min-width: 960px) {
       .footer__logo img {
-        width: 100%; } }
+        width: 100%;
+        opacity: 0.5; } }
