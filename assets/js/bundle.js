@@ -96,8 +96,7 @@
 /*** IMPORTS FROM imports-loader ***/var define=false;// import $ from 'jquery';
 // import Magnetic from "magnetic";
 // import LocomotiveScroll from 'locomotive-scroll';
-// document.addEventListener("DOMContentLoaded", function() {
-// //set Time Out
+document.addEventListener("DOMContentLoaded",function(){// //set Time Out
 // setTimeout(() => {
 //   document.documentElement.classList.add('is-ready');
 // },300);
@@ -117,12 +116,8 @@
 //   el: document.querySelector('[data-scroll-container]'),
 //   smooth: true,
 // });
-// //Menu
-// document.querySelector('.button').addEventListener("click", function() {
-//   document.querySelector('.menu__navbar').classList.toggle('active')
-//   this.classList.toggle('-menu-open');
-// })
-// //expansion
+//Menu
+document.querySelector('.button').addEventListener("click",function(){document.querySelector('.menu__navbar').classList.toggle('active');this.classList.toggle('-menu-open');});// //expansion
 // const expansion = $(".questions__list--item");
 // var expansionArr = Object.values(expansion);
 // $(".questions__list--item--description").eq(0).show();
@@ -134,7 +129,7 @@
 //       $(this).find('.questions__list--item--title').find('img').attr('src', './img/minus.svg')
 //     } 
 //   }); 
-// });
+});
 
 /***/ })
 
